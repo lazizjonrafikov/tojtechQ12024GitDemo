@@ -36,16 +36,17 @@ class TestEndToEnd(BaseClass):
 
 
         # sleep(3)
-        # frame_element = self.driver.find_elements(By.TAG_NAME, "iframe")
-        # self.driver.switch_to.frame(frame_element[1])
-        # sleep(2)
-        # self.driver.find_element(By.CSS_SELECTOR, "#Field-numberInput").send_keys("4242424242424242")
-        # sleep(5)
-        # self.driver.switch_to.default_content()
-        # sleep(2)
-        # self.driver.find_element(By.XPATH, "//span[text()='Place Order']").click()
-        # sleep(5)
-        # self.driver.quit()
+        frame_element = self.driver.find_elements(By.TAG_NAME, "iframe")
+        self.driver.switch_to.frame(frame_element[1])
+        sleep(2)
+        self.driver.find_element(By.CSS_SELECTOR, "#Field-numberInput").send_keys("4242424242424242")
+        sleep(5)
+        self.driver.switch_to.default_content()
+        sleep(2)
+        self.driver.find_element(By.XPATH, "//span[text()='Place Order']").click()
+        sleep(5)
+        self.driver.quit()
+        print("New changes by American Timezone guy.")
 
 
 
